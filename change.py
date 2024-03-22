@@ -4,12 +4,16 @@ def change():
     diff = money - expense
     
     pesos = int(diff)
-    centavos = diff - pesos
-    
+    centavos = (diff - pesos)*100
+
+    print("Ingresar gasto:")
+    print(expense)
+    print("Dinero recibido")
+    print(money)
     print('')
-    print('VUELTO')
+    print('Vuelto')
     print('')
-    print('PESOS:')
+    print('Pesos:')
     print(pesos) 
-    print('CENTAVOS:')
-    print(int(centavos * 100))
+    print('Centavos:')
+    print(int(centavos))
